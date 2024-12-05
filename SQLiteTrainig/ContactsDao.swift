@@ -27,7 +27,7 @@ class ContactsDao {
                 print("\(contact_id) - \(contact_name) - \(contact_phone)")
             }
             
-        
+            
         }catch {
             print(error.localizedDescription)
         }
@@ -55,6 +55,55 @@ class ContactsDao {
         db?.open()
         do {
             try db!.executeUpdate("DELETE FROM kisiler WHERE kisi_id = ?", values: [id])
+        }catch {
+            print(error.localizedDescription)
+        }
+        db?.close()
+    }
+    func getContact(id: Int){
+        db?.open()
+        do {
+            let result = try db!.executeQuery("SELECT * FROM kisiler WHERE kisi_id = ?",values: [id])
+            while result.next(){
+                let contact_id = Int(result.string(forColumn: "kisi_id"))!
+                let contact_name = result.string(forColumn: "kisi_ad")!
+                let contact_phone = result.string(forColumn: "kisi_tel")!
+                print("---------------------")
+                print("\(contact_id) - \(contact_name) - \(contact_phone)")
+            }
+            
+            
+        }catch {
+            print(error.localizedDescription)
+        }
+        db?.close()
+    }
+    func searchContact(word: String){
+        db?.open()
+        do {
+            let result = try db!.executeQuery("SELECT * FROM kisiler WHERE kisi_ad LIKE ?",values: ["%\(word)%"])
+            while result.next(){
+                let contact_id = Int(result.string(forColumn: "kisi_id"))!
+                let contact_name = result.string(forColumn: "kisi_ad")!
+                let contact_phone = result.string(forColumn: "kisi_tel")!
+                print("---------------------")
+                print("\(contact_id) - \(contact_name) - \(contact_phone)")
+            }
+        }catch {
+            print(error.localizedDescription)
+        }
+        db?.close()
+    }
+    func controlContact(name: String){
+        db?.open()
+        do {
+            let result = try db!.executeQuery("SELECT count(*) AS result FROM kisiler WHERE kisi_ad LIKE ?",values: ["%\(name)%"])
+            while result.next(){
+                let answer = Int(result.string(forColumn: "result"))!
+                
+                print("---------------------")
+                print("Result: \(answer)")
+            }
         }catch {
             print(error.localizedDescription)
         }

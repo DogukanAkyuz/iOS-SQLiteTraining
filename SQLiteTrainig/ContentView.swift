@@ -15,9 +15,11 @@ struct ContentView: View {
                 let cdao = ContactsDao()
                 //cdao.addContact(name: "Mehmet", phone: "6756")
                 //cdao.updateContact(id: 1, name: "Alican", phone: "2345")
-                cdao.deleteContact(id: 5)
-                cdao.allContacts()
-                
+                //cdao.deleteContact(id: 5)
+                //cdao.allContacts()
+                //cdao.getContact(id: 2)
+                //cdao.searchContact(word: "e")
+                cdao.controlContact(name: "Ece")
             }
     }
 
