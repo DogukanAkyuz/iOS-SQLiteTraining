@@ -13,7 +13,11 @@ struct ContentView: View {
             .onAppear {
                 copyDB()
                 let cdao = ContactsDao()
+                //cdao.addContact(name: "Mehmet", phone: "6756")
+                //cdao.updateContact(id: 1, name: "Alican", phone: "2345")
+                cdao.deleteContact(id: 5)
                 cdao.allContacts()
+                
             }
     }
 

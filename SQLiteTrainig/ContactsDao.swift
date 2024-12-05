@@ -31,6 +31,33 @@ class ContactsDao {
         }catch {
             print(error.localizedDescription)
         }
-        
+        db?.close()
+    }
+    func addContact(name: String, phone: String){
+        db?.open()
+        do {
+            try db!.executeUpdate("INSERT INTO kisiler (kisi_ad, kisi_tel) VALUES (?,?)", values: [name, phone])
+        }catch {
+            print(error.localizedDescription)
+        }
+        db?.close()
+    }
+    func updateContact(id: Int, name: String, phone: String){
+        db?.open()
+        do {
+            try db!.executeUpdate("UPDATE kisiler SET kisi_ad = ?, kisi_tel = ? WHERE kisi_id = ?", values: [name, phone, id])
+        }catch {
+            print(error.localizedDescription)
+        }
+        db?.close()
+    }
+    func deleteContact(id: Int){
+        db?.open()
+        do {
+            try db!.executeUpdate("DELETE FROM kisiler WHERE kisi_id = ?", values: [id])
+        }catch {
+            print(error.localizedDescription)
+        }
+        db?.close()
     }
 }
