@@ -6,17 +6,42 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E66F69042D01E0A9006D574B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66F68FE2D01E0A9006D574B /* Preview Assets.xcassets */; };
+		E66F69052D01E0A9006D574B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66F69002D01E0A9006D574B /* Assets.xcassets */; };
+		E66F69062D01E0A9006D574B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66F69012D01E0A9006D574B /* ContentView.swift */; };
+		E66F69072D01E0A9006D574B /* SQLiteTrainigApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66F69022D01E0A9006D574B /* SQLiteTrainigApp.swift */; };
+		E66F69092D01E0E2006D574B /* rehber.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = E66F69082D01E0E2006D574B /* rehber.sqlite */; };
+		E66F69172D01E19F006D574B /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = E66F69112D01E19F006D574B /* FMDatabasePool.m */; };
+		E66F69182D01E19F006D574B /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E66F690D2D01E19F006D574B /* FMDatabase.m */; };
+		E66F69192D01E19F006D574B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E66F69162D01E19F006D574B /* FMResultSet.m */; };
+		E66F691A2D01E19F006D574B /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E66F690F2D01E19F006D574B /* FMDatabaseAdditions.m */; };
+		E66F691B2D01E19F006D574B /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E66F69132D01E19F006D574B /* FMDatabaseQueue.m */; };
+		E66F691E2D01E438006D574B /* ContactsDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66F691D2D01E438006D574B /* ContactsDao.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		E66F68FE2D01E0A9006D574B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E66F69002D01E0A9006D574B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E66F69012D01E0A9006D574B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E66F69022D01E0A9006D574B /* SQLiteTrainigApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteTrainigApp.swift; sourceTree = "<group>"; };
+		E66F69082D01E0E2006D574B /* rehber.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = rehber.sqlite; sourceTree = "<group>"; };
+		E66F690B2D01E147006D574B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E66F690C2D01E19F006D574B /* FMDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		E66F690D2D01E19F006D574B /* FMDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		E66F690E2D01E19F006D574B /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		E66F690F2D01E19F006D574B /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		E66F69102D01E19F006D574B /* FMDatabasePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		E66F69112D01E19F006D574B /* FMDatabasePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		E66F69122D01E19F006D574B /* FMDatabaseQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		E66F69132D01E19F006D574B /* FMDatabaseQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		E66F69142D01E19F006D574B /* FMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		E66F69152D01E19F006D574B /* FMResultSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		E66F69162D01E19F006D574B /* FMResultSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		E66F691C2D01E1A1006D574B /* SQLiteTrainig-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLiteTrainig-Bridging-Header.h"; sourceTree = "<group>"; };
+		E66F691D2D01E438006D574B /* ContactsDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDao.swift; sourceTree = "<group>"; };
 		E6B9DC182D01DF150060F732 /* SQLiteTrainig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteTrainig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		E6B9DC1A2D01DF150060F732 /* SQLiteTrainig */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SQLiteTrainig;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E6B9DC152D01DF150060F732 /* Frameworks */ = {
@@ -29,10 +54,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E66F68FF2D01E0A9006D574B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E66F68FE2D01E0A9006D574B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E66F69032D01E0A9006D574B /* SQLiteTrainig */ = {
+			isa = PBXGroup;
+			children = (
+				E66F68FF2D01E0A9006D574B /* Preview Content */,
+				E66F69002D01E0A9006D574B /* Assets.xcassets */,
+				E66F69082D01E0E2006D574B /* rehber.sqlite */,
+				E66F690C2D01E19F006D574B /* FMDatabase.h */,
+				E66F690D2D01E19F006D574B /* FMDatabase.m */,
+				E66F690E2D01E19F006D574B /* FMDatabaseAdditions.h */,
+				E66F690F2D01E19F006D574B /* FMDatabaseAdditions.m */,
+				E66F69102D01E19F006D574B /* FMDatabasePool.h */,
+				E66F69112D01E19F006D574B /* FMDatabasePool.m */,
+				E66F69122D01E19F006D574B /* FMDatabaseQueue.h */,
+				E66F69132D01E19F006D574B /* FMDatabaseQueue.m */,
+				E66F69142D01E19F006D574B /* FMDB.h */,
+				E66F69152D01E19F006D574B /* FMResultSet.h */,
+				E66F69162D01E19F006D574B /* FMResultSet.m */,
+				E66F69012D01E0A9006D574B /* ContentView.swift */,
+				E66F691D2D01E438006D574B /* ContactsDao.swift */,
+				E66F69022D01E0A9006D574B /* SQLiteTrainigApp.swift */,
+				E66F691C2D01E1A1006D574B /* SQLiteTrainig-Bridging-Header.h */,
+			);
+			path = SQLiteTrainig;
+			sourceTree = "<group>";
+		};
+		E66F690A2D01E147006D574B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E66F690B2D01E147006D574B /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E6B9DC0F2D01DF150060F732 = {
 			isa = PBXGroup;
 			children = (
-				E6B9DC1A2D01DF150060F732 /* SQLiteTrainig */,
+				E66F69032D01E0A9006D574B /* SQLiteTrainig */,
+				E66F690A2D01E147006D574B /* Frameworks */,
 				E6B9DC192D01DF150060F732 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,9 +127,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				E6B9DC1A2D01DF150060F732 /* SQLiteTrainig */,
-			);
 			name = SQLiteTrainig;
 			packageProductDependencies = (
 			);
@@ -82,6 +146,7 @@
 				TargetAttributes = {
 					E6B9DC172D01DF150060F732 = {
 						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
 					};
 				};
 			};
@@ -109,6 +174,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66F69042D01E0A9006D574B /* Preview Assets.xcassets in Resources */,
+				E66F69052D01E0A9006D574B /* Assets.xcassets in Resources */,
+				E66F69092D01E0E2006D574B /* rehber.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66F69062D01E0A9006D574B /* ContentView.swift in Sources */,
+				E66F69072D01E0A9006D574B /* SQLiteTrainigApp.swift in Sources */,
+				E66F69172D01E19F006D574B /* FMDatabasePool.m in Sources */,
+				E66F69182D01E19F006D574B /* FMDatabase.m in Sources */,
+				E66F69192D01E19F006D574B /* FMResultSet.m in Sources */,
+				E66F691A2D01E19F006D574B /* FMDatabaseAdditions.m in Sources */,
+				E66F691B2D01E19F006D574B /* FMDatabaseQueue.m in Sources */,
+				E66F691E2D01E438006D574B /* ContactsDao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SQLiteTrainig/Preview Content\"";
@@ -267,6 +344,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dogukanakyuz.SQLiteTrainig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteTrainig/SQLiteTrainig-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -277,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SQLiteTrainig/Preview Content\"";
@@ -295,6 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dogukanakyuz.SQLiteTrainig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLiteTrainig/SQLiteTrainig-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
