@@ -12,6 +12,8 @@ struct ContentView: View {
         Text("SQLite")
             .onAppear {
                 copyDB()
+                let cdao = ContactsDao()
+                cdao.allContacts()
             }
     }
 
